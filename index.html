@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script src="script.js"></script>
+    <script src="confirm.js"></script>
+    <script src="uname.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrap outer-shadow">
+        <h1>Create Account</h1>
+        <h6>It's free and hardly takes more than 30 seconds</h6>
+        <form onsubmit="return validate();" action="success.html">
+          <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input
+              id="uname"
+              class="input-field"
+              type="text"
+              placeholder="Username"
+              name="usrnm"
+              required
+            />
+          </div>
+
+          <div class="input-container">
+            <i class="fa fa-paper-plane icon"></i>
+            <input
+              class="input-field"
+              type="email"
+              placeholder="Email"
+              name="email"
+              required
+            />
+          </div>
+
+          <div class="input-container">
+            <i class="fa fa-lock icon"></i>
+            <input
+              id="myInput"
+              class="input-field"
+              type="password"
+              placeholder="Password"
+              name="psw"
+              required
+            />
+            <input
+              type="checkbox"
+              onclick="myFunction()"
+              <i
+              class="fa fa-eye"
+            />
+          </div>
+
+          <div class="input-container">
+            <i class="fas fa-clipboard-check icon"></i>
+            <input
+              id="txtConfirmPassword"
+              class="input-field"
+              type="password"
+              placeholder="Confirm Password"
+              name="psw"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            id="btnSubmit"
+            value="Submit"
+            class="btn"
+            onclick="return Validate()"
+          >
+            Sign Up
+          </button>
+        </form>
+        <h6>
+          By clicking the Sign Up button, yuo agree to our Terms & Conditions
+          and Privacy Policy
+        </h6>
+      </div>
+    </div>
+  </body>
+</html>
